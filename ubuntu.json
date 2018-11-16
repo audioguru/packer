@@ -2,13 +2,13 @@
   "builders": [{
     "type": "azure-arm",
 
-    "client_id": "d745b7ec-f3c0-4468-ad52-215615a5100d",
-    "client_secret": "985fcfed-40f6-4b49-b919-b5c811a78deb",
-    "tenant_id": "a7288f82-b9ee-4329-925d-f67e405ec2a4",
-    "subscription_id": "0ab9ad2e-f316-4da5-b243-e7f65da24755",
+    "client_id": "",
+    "client_secret": "",
+    "tenant_id": "",
+    "subscription_id": "",
 
-    "managed_image_resource_group_name": "table7jkpacker",
-    "managed_image_name": "table7packerimage",
+    "managed_image_resource_group_name": "table3jspacker",
+    "managed_image_name": "table3jspackerimage",
 
     "os_type": "Linux",
     "image_publisher": "Canonical",
@@ -20,7 +20,7 @@
         "task": "Image deployment"
     },
 
-    "location": "southcentralus",
+    "location": "australiasoutheast",
     "vm_size": "Standard_DS2_v2"
   }],
   "provisioners": [{
@@ -34,5 +34,9 @@
     ],
     "inline_shebang": "/bin/sh -x",
     "type": "shell"
+  },
+  {
+    "type": "ansible",
+    "playbook_file": "./java_app.yml"
   }
 ]}

@@ -8,6 +8,8 @@
         update_cache: true
       with_items:
        - git
+       - cowsay
+       - apache2
       become: true
     - name: Mk dest dir
       file: 
