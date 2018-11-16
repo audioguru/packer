@@ -34,10 +34,5 @@
     ],
     "inline_shebang": "/bin/sh -x",
     "type": "shell"
-  },
-  {
-    "type": "ansible",
-    "playbook_file": "./java_app.yml"
   }
-]
-}
+]}
